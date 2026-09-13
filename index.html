@@ -786,19 +786,5 @@
     </div>
 
   </main>
-<script>
-document.getElementById("joinBtn").addEventListener("click", function () {
-  fetch("https://rockyboss.vercel.app/api/subscribe", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      event_source_url: window.location.href
-    }),
-    keepalive: true
-  }).catch(() => {});
-});
-</script>
 </body>
 </html>
